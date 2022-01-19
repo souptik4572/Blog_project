@@ -5,7 +5,7 @@ from django.db.models import Q
 
 UserModel = get_user_model()
 
-
+# Setting up logic for sign in using email alongside username
 class EmailBackend(ModelBackend):
     def authenticate(self, request, username=None, password=None, **kwargs):
         print(request)

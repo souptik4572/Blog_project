@@ -131,6 +131,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 LOGIN_REDIRECT_URL='blog-home'
 LOGIN_URL="login"
 
-
+# Setting our default User model to be our CustomUser model
 AUTH_USER_MODEL = 'users.CustomUser'
+# Configuring our custom made sign in logic into the project
 AUTHENTICATION_BACKENDS = ['users.backends.EmailBackend']
